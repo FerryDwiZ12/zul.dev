@@ -1,5 +1,4 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import About from "./components/about";
 import Experience from "./components/experience";
 import Footer from "./components/footer";
