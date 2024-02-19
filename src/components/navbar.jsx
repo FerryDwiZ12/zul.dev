@@ -32,7 +32,7 @@ export default function Navbar() {
         <div>
           <div id='navbar' className=' flex items-center justify-between py-3 md:py-5 md:block'>
             <Link to='header' smooth={true} duration={500} offset={-window.innerHeight}>
-              <h2 className='cursor-pointer text-xl font-semibold text-indigo-50 hover:text-[#A200EC]'>zul.dev</h2>
+              <h2 className='cursor-pointer text-xl font-semibold text-indigo-50 hover:text-[#A200EC]'>Zul.dev</h2>
             </Link>
             <div className='md:hidden'>
               <button className='p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border' onClick={() => setNavbar(!navbar)}>
@@ -83,15 +83,24 @@ export default function Navbar() {
           </ul>
         </div>
         <div className='pt-10'>
-          <a href="https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing" download="my-cv" target="blank" className='border-solid p-2  sm:hidden border-2 border-gray-100 rounded-lg  w-fit mb-12 hover:border-[#A200EC]'>
-            <button type="button" className='text-indigo-50 px-4  hover:text-[#A200EC]'>Download CV</button>
+          <a
+            href='https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing'
+            download='my-cv'
+            target='blank'
+            className='border-solid p-2  sm:hidden border-2 border-gray-100 rounded-lg  w-fit mb-12 hover:border-[#A200EC]'
+          >
+            <button type='button' className='text-indigo-50 px-4  hover:text-[#A200EC]'>
+              Download CV
+            </button>
           </a>
         </div>
 
         <div className='hidden lg:block md:block'>
           {/* Ini akan muncul di mode laptop dan tablet (layar berukuran lg atau md) */}
-          <a href="https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing" download="my-cv" target="blank" className='border-solid p-2 border-2 border-gray-400 rounded-lg hover:border-[#A200EC]'>
-            <button type="button" className='text-indigo-50 px-4  hover:text-[#A200EC]'>Download CV</button>
+          <a href='https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing' download='my-cv' target='blank' className='border-solid p-2 border-2 border-gray-400 rounded-lg hover:border-[#A200EC]'>
+            <button type='button' className='text-indigo-50 px-4  hover:text-[#A200EC]'>
+              Download CV
+            </button>
           </a>
         </div>
       </div>
