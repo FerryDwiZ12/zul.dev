@@ -3,13 +3,13 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className='h-auto md:h-[300px] xl:mx-5 lg:mx-5 flex flex-col md:flex-row mx-7'>
+    <footer className=' flex md:py-10 flex-col lg:flex-row mx-7'>
       <div className='w-full md:w-4/5 mt-12'>
         <h1 className='text-3xl font-bold text-white mb-4'>Let’s keep in touch!</h1>
         <p className='text-[#FBF0FF] font-base tracking-wide leading-relaxed'>Find me on any of these platforms, I respond 1-2 business days.</p>
       </div>
-      <div className='w-full md:w-2/3 flex flex-col md:flex-row mt-12'>
-        <div className='w-full flex flex-col gap-1 md:w-3/5 mb-10 md:mb-0 xl:mb-0'>
+      <div className='w-full flex flex-col  md:flex-row mt-12 '>
+        <div className='w-full flex flex-col gap-1 md:w-3/5 lg:w-1/2 mb-10 md:mb-0 xl:mb-0 lg:items-end'>
           <h1 className='font-bold text-xl text-white mb-6'>Other Resources</h1>
           <Link to='about' smooth={true} duration={500} offset={-window.innerHeight / 7} className='text-white mb-2 cursor-pointer'>
             About
@@ -27,7 +27,7 @@ const Footer = () => {
             Testimonial
           </Link>
         </div>
-        <div className='w-full flex flex-col gap-1 md:w-3/5 mb-10 md:mb-0 xl:mb-0'>
+        <div className=' flex flex-col gap-1 lg:w-1/2  mb-10 md:mb-0 lg:items-end xl:mb-0'>
           <h1 className='font-bold text-xl text-white mb-6'>Other Resources</h1>
           <a href='https://github.com/FerryDwiZ12' className='text-white mb-2'>
             Github

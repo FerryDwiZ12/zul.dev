@@ -27,8 +27,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`  w-full z-50 fixed top-0 left-0 bg-opacity-90 backdrop-blur-xl ${navbar ? "bg-opacity-90 backdrop-blur-md" : ""}`}>
-      <div className='justify-between w-full px-4 mx-auto lg:max-w-7xl md:items-center xl:px-5 md:flex md:px-8 lg:px-5' onClick={stopPropagation}>
+    <nav className={`w-full z-50 px-4 lg:px-12 fixed top-0 left-0 bg-opacity-90 backdrop-blur-xl ${navbar ? "bg-opacity-90 backdrop-blur-md" : ""}`}>
+      <div className='justify-between w-full px-4 lg:px-0 xl:px-6 mx-auto lg:max-w-7xl md:items-center  md:flex  ' onClick={stopPropagation}>
         <div>
           <div id='navbar' className=' flex items-center justify-between py-3 md:py-5 md:block'>
             <Link to='header' smooth={true} duration={500} offset={-window.innerHeight}>
@@ -54,7 +54,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
-          <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
+          <ul className='items-center justify-center space-y-7 mt-6 md:mt-0  md:flex md:space-x-6 md:space-y-0'>
             <li className='text-gray-600 hover:text-black cursor-pointer hover:underline hover:py-1'>
               <Link to='about' smooth={true} duration={500} offset={-window.innerHeight / 7} className='text-indigo-50'>
                 About Me
@@ -80,25 +80,30 @@ export default function Navbar() {
                 Testimonials
               </Link>
             </li>
+            <li>
+              <div className='mb-5 mt-12 md:hidden'>
+                <a
+                  href='https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing'
+                  download='my-cv'
+                  target='blank'
+                  className='border-solid p-2  sm:hidden border-2 border-gray-100 rounded-lg  w-fit mb-12 hover:border-[#A200EC]'
+                >
+                  <button type='button' className='text-indigo-50 px-4  hover:text-[#A200EC]'>
+                    Download CV
+                  </button>
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
-        <div className='pt-10'>
+        <div className='hidden group md:inline-block'>
           <a
             href='https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing'
             download='my-cv'
             target='blank'
-            className='border-solid p-2  sm:hidden border-2 border-gray-100 rounded-lg  w-fit mb-12 hover:border-[#A200EC]'
+            className='border-solid p-2  border-2 border-gray-100 rounded-lg  w-fit mb-12 hover:border-[#A200EC]'
           >
-            <button type='button' className='text-indigo-50 px-4  hover:text-[#A200EC]'>
-              Download CV
-            </button>
-          </a>
-        </div>
-
-        <div className='hidden lg:block md:block'>
-          {/* Ini akan muncul di mode laptop dan tablet (layar berukuran lg atau md) */}
-          <a href='https://drive.google.com/drive/folders/19BQOeLsW9J7ctLEWf28NI-bHoI-H4WxS?usp=sharing' download='my-cv' target='blank' className='border-solid p-2 border-2 border-gray-400 rounded-lg hover:border-[#A200EC]'>
-            <button type='button' className='text-indigo-50 px-4  hover:text-[#A200EC]'>
+            <button type='button' className='text-indigo-50 px-4  group-hover:text-[#A200EC]'>
               Download CV
             </button>
           </a>

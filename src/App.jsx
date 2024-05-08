@@ -9,12 +9,12 @@ import Testimonials from "./components/testimonials";
 
 const App = () => {
   return (
-    <div>
-      <div className='mx-4 md:mx-0 lg:mx-24 xl:mx-32 mt-8'>
-        <div className='mb-8 mt-40 xl:mt-52 max-w-7xl mx-auto'>
+    <>
+      <div className='w-full px-4 lg:px-12  mt-8 overflow-x-clip'>
+        <div className='mb-8 xl:mt-52 max-w-7xl mx-auto '>
           <Navbar />
         </div>
-        <div className='mt-0 lg:mb-8 xl:mb-8 xl:mt-32 max-w-7xl mx-auto'>
+        <div className='mt-28 lg:mb-8 xl:mb-8 xl:mt-32 max-w-7xl mx-auto'>
           <Header />
         </div>
         <div className='mt-0 lg:mb-8 xl:mb-8 xl:mt-32 max-w-7xl mx-auto'>
@@ -34,11 +34,11 @@ const App = () => {
         </div>
       </div>
       <div className=' bg-gradient-to-t from-[#000] to-[#000]/25'>
-        <footer className=' max-w-7xl mx-auto'>
+        <footer className='max-w-7xl  mx-auto'>
           <Footer />
         </footer>
       </div>
-    </div>
+    </>
   );
 };
 

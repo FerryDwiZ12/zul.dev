@@ -16,8 +16,8 @@ export default function Header() {
               I’m Ferry <br /> Dwi Zulkhifli
             </h1>
             <h1 className='text-white text-base  xl:text-xl xl:mt-2 font-light mt-6 mb-12 '>I’am Fullstack Developer & UI/UX Designer</h1>
-            <a href="mailto:ferrydwizulkhifli@gmail.com" className='border-solid  border-2 p-2 border-white rounded-lg hover:border-[#A200EC] w-fit'>
-              <button type="button" className='text-white  px-4 cursor-pointer hover:text-[#A200EC]'>Contact Me</button>
+            <a href="mailto:ferrydwizulkhifli@gmail.com" className='group border-solid  border-2 p-2 border-white rounded-lg hover:border-[#A200EC] w-fit'>
+              <button type="button" className='text-white  px-4 cursor-pointer group-hover:text-[#A200EC]'>Contact Me</button>
             </a>
             <div className='flex items-center gap-3 mt-4 '>
               <a href="https://dribbble.com/ferrydwiz_" className='mt-6 p-1.5 bg-gradient-to-b rounded-lg cursor-pointer hover:bg-opacity-10 hover:bg-[#cf98ff]  bg-[#DEB8FF] bg-opacity-15 border border-white border-opacity-15 backdrop-blur-sm '>
