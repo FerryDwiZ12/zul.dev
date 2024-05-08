@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className={`w-full z-50 px-4 lg:px-12 fixed top-0 left-0 bg-opacity-90 backdrop-blur-xl ${navbar ? "bg-opacity-90 backdrop-blur-md" : ""}`}>
       <div className='justify-between w-full px-4 lg:px-0 xl:px-6 mx-auto lg:max-w-7xl md:items-center  md:flex  ' onClick={stopPropagation}>
         <div>
-          <div id='navbar' className=' flex items-center justify-between py-3 md:py-5 md:block'>
+          <div id='navbar' className=' flex items-center justify-between py-3 md:py-12 md:block'>
             <Link to='header' smooth={true} duration={500} offset={-window.innerHeight}>
               <h2 className='cursor-pointer text-xl font-semibold text-indigo-50 hover:text-[#A200EC]'>Zul.dev</h2>
             </Link>
@@ -55,27 +55,27 @@ export default function Navbar() {
         </div>
         <div className={`flex-1 justify-self-center pb-3 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
           <ul className='items-center justify-center space-y-7 mt-6 md:mt-0  md:flex md:space-x-6 md:space-y-0'>
-            <li className='text-gray-600 hover:text-black cursor-pointer hover:underline hover:py-1'>
+            <li className='text-gray-600 md:text-sm lg:text-lg  hover:text-black cursor-pointer hover:underline hover:py-1'>
               <Link to='about' smooth={true} duration={500} offset={-window.innerHeight / 7} className='text-indigo-50'>
                 About Me
               </Link>
             </li>
-            <li className='text-gray-600 hover:text-black cursor-pointer hover:underline hover:py-1'>
+            <li className='text-gray-600 md:text-sm lg:text-lg hover:text-black cursor-pointer hover:underline hover:py-1'>
               <Link to='experience' smooth={true} duration={500} offset={-window.innerHeight / 9} className='text-indigo-50'>
                 Experience
               </Link>
             </li>
-            <li className='text-gray-600 hover:text-black cursor-pointer hover:underline hover:py-1'>
+            <li className='text-gray-600 md:text-sm lg:text-lg hover:text-black cursor-pointer hover:underline hover:py-1'>
               <Link to='portofolio' smooth={true} duration={500} offset={-window.innerHeight / 12} className='text-indigo-50'>
                 Portfolio
               </Link>
             </li>
-            <li className='text-gray-600 hover:text-black cursor-pointer hover:underline hover:py-1'>
+            <li className='text-gray-600 md:text-sm lg:text-lg hover:text-black cursor-pointer hover:underline hover:py-1'>
               <Link to='skill' smooth={true} duration={500} offset={-window.innerHeight / 5} className='text-indigo-50'>
                 Skills
               </Link>
             </li>
-            <li className='text-gray-600 hover:text-black cursor-pointer hover:underline hover:py-1'>
+            <li className='text-gray-600 md:text-sm lg:text-lg hover:text-black cursor-pointer hover:underline hover:py-1'>
               <Link to='testimonial' smooth={true} duration={500} offset={-window.innerHeight / 5} className='text-indigo-50'>
                 Testimonials
               </Link>

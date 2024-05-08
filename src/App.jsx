@@ -10,11 +10,11 @@ import Testimonials from "./components/testimonials";
 const App = () => {
   return (
     <>
-      <div className='w-full px-4 lg:px-12  mt-8 overflow-x-clip'>
+      <div className='w-full px-4 lg:px-12 overflow-x-clip'>
         <div className='mb-8 xl:mt-52 max-w-7xl mx-auto '>
           <Navbar />
         </div>
-        <div className='mt-28 lg:mb-8 xl:mb-8 xl:mt-32 max-w-7xl mx-auto'>
+        <div className='mt-28 lg:mb-8 xl:mb-8 lg:mt-32 max-w-7xl mx-auto'>
           <Header />
         </div>
         <div className='mt-0 lg:mb-8 xl:mb-8 xl:mt-32 max-w-7xl mx-auto'>
